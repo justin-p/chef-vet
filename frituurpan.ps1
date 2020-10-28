@@ -5,7 +5,7 @@ function knotsdukip ($snackie) {
             License: MIT
     
         .LINK
-            https://github.com/justin-p/PowerShell/blob/master/frituurpan.ps1
+            https://github.com/justin-p/chef-vet/blob/main/frituurpan.ps1
     #>    
     return (iwr $snackie).content
 }
@@ -22,7 +22,7 @@ do {
     Write-Host "99 - S P E C E R I J E N"
     Write-Host "Q - ja niks."
     $ans = Read-Host 'Ja wat motje ?'
-    if ($selection -eq 99) {
+    if ($selection -eq "99") {
         foreach ($nugget in $nuggets) {
             iex(knotsdukip $nugget.url)
         }
@@ -31,10 +31,7 @@ do {
         $quit = $true
     }
     Else {
-        $selection = $menu.Item($ans)
+        iex(knotsdukip $menu.Item([int]$ans))
     }
-    
-
-    write-host $selection
 }
 until ($quit -eq $true)
