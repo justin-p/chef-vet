@@ -24,7 +24,7 @@ do {
     $ans = Read-Host 'Ja wat motje ?'
     if ($selection -eq 99) {
         foreach ($nugget in $nuggets) {
-            knotsdukip $nugget.url
+            iex(knotsdukip $nugget.url)
         }
     } ElseIf($ans.ToLower() -eq "q") {
         write-host "Op zoute dan"
