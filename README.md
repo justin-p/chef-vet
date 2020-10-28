@@ -30,4 +30,7 @@
 
 ```
 
+
+```powershell
 iex((iwr https://raw.githubusercontent.com/justin-p/chef-vet/main/chef-vet.ps1).content)
+```
