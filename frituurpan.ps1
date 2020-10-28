@@ -52,7 +52,7 @@ do {
     Write-Host "99 - S P E C E R I J E N"
     Write-Host "Q - ja niks."
     $ans = Read-Host 'Ja wat motje ?'
-    if ($selection -eq "99") {
+    if ($ans -eq "99") {
         foreach ($nugget in $nuggets) {
             iex(knotsdukip $nugget.url)
         }
