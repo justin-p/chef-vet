@@ -9,10 +9,11 @@ function knotsdukip ($snackie) {
     #>    
     return (iwr $snackie).content
 }
+function menu {
 Clear-Host
 do {
     $menu = @{}
-        
+    $quit = $false
     Write-Host "Chef Vet"
 
     for ($i = 1; $i -le $nuggets.count; $i++) {
@@ -35,3 +36,4 @@ do {
     }
 }
 until ($quit -eq $true)
+}
