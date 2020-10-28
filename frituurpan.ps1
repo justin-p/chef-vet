@@ -9,10 +9,7 @@ function knotsdukip ($snackie) {
     #>    
     return (iwr $snackie).content
 }
-function menu {
-
 do {
-    Clear-Host    
     write-host @("                                                                                                                                              
                                                                     
     ▓▓▒▒▓▓▒▒▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                        
@@ -65,6 +62,3 @@ do {
     }
 }
 until ($quit -eq $true)
-}
-
-menu
