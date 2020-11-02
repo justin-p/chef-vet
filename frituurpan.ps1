@@ -54,7 +54,7 @@ do {
             iex(knotsdukip $nugget.url)
         }
     } ElseIf($ans.ToLower() -eq "q") {
-        write-host "Op zoute dan"
+        write-host "Op zoute dan !"
         $quit = $true
     }
     Else {
