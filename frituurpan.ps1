@@ -7,7 +7,7 @@ function knotsdukip ($snackie) {
         .LINK
             https://github.com/justin-p/chef-vet/blob/main/frituurpan.ps1
     #>    
-    return (iwr $snackie).content
+    return (iwr -UseBasicParsing $snackie).content
 }
 do {
     write-host @("                                                                                                                                              
