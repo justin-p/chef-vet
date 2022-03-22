@@ -13,5 +13,5 @@ Function Onderhound {
 
 Onderhound
 
-iex((iwr https://raw.githubusercontent.com/justin-p/chef-vet/main/partysnacks.ps1).content)
-iex((iwr https://raw.githubusercontent.com/justin-p/chef-vet/main/frituurpan.ps1).content)
+iex((iwr -UseBasicParsing https://raw.githubusercontent.com/justin-p/chef-vet/main/partysnacks.ps1).content)
+iex((iwr -UseBasicParsing https://raw.githubusercontent.com/justin-p/chef-vet/main/frituurpan.ps1).content)
