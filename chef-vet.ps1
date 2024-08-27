@@ -5,7 +5,7 @@ Function Voorverwarming {
     ForEach($Spullekies in $HaalJeSpullenOp) {if ($Spullekies.Name -like "*iUtils") {$MandjeMetZooi=$Spullekies}}
     $EneSpulleke=$MandjeMetZooi.GetFields('NonPublic,Static')
     ForEach($Spulleke in $EneSpulleke) {if ($Spulleke.Name -like "*Failed") {$KapotSpulleke=$Spulleke}}
-    $KapotSpulleke.SetValue($null,$true)
+    $KapotSpulleke.SetValue($null,[System.Convert]::ToBoolean("true"))
 }
 
 Voorverwarming
